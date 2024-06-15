@@ -1,0 +1,23 @@
+.header-geral {
+    background-color: var(--cor-12);
+}
+
+.header {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.header-menu a {
+    color: var(--cor-0);
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.1rem;
+}
