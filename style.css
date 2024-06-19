@@ -6,3 +6,8 @@
 /* Home */
 @import 'css/home/introducao.css';
 
+
+/* Bicicletas */
+
+@import 'css/bicicletas/bicicletas-listas.css'
+

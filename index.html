@@ -11,12 +11,12 @@
     <title>Bikcraft - Bicicletas Elétricas</title>
 </head>
 <body>
-    <header class="header-geral"> 
+    <header class="header-bg"> 
         <div class="header">
-            <a href="index.html">
-                <img class="" src="img/bikcraft.svg" alt="Bikcraft" width="136" height="26">
+            <a href="./">
+                <img class="logo" src="img/bikcraft.svg" alt="Bikcraft" width="136" height="26">
             </a>
-            <nav>
+            <nav aria-label="primaria">
                 <ul class="header-menu">
                     <li><a href="bicicletas.html">Bicicletas</a></li>
                     <li><a href="seguros.html">Seguros</a></li>
@@ -29,12 +29,39 @@
     <main class="introducao">
         <div class="intro-container">
             <div class="intro-conteudo">
-                <h1>Bicicletas feitas sob medida<span class="ponto">.</span></h1>
+                <h1 class="titulo-w">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
                 <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
                 <a href="bicicletas.html">Selecione a sua</a>
             </div>
             <img src="img/bicicletas/nimbus-home.jpg" alt="Bicicleta Nimbus">
         </div>
     </main>
+
+    <article aria-label="bicicletas" class="bicicletas">
+        <h2 class="titulo-b">escolha a sua<span class="ponto">.</span></h2>
+        <div class="bicicletas-lista">
+            <div class="magic">
+                <img class="img-bike" src="img/bicicletas/magic-home.jpg" alt="">
+                <ul>
+                    <li class="nome">Magic Might</li>
+                    <li class="preco">R$ 2499</li>
+                </ul>
+            </div>
+            <div class="nimbus">
+                <img class="img-bike" src="img/bicicletas/nimbus-home.jpg" alt="">
+                <ul>
+                    <li class="nome">Nimbus Stark</li>
+                    <li class="preco">R$ 4999</li>
+                </ul>
+            </div>
+            <div class="nebula">
+                <img class="img-bike" src="img/bicicletas/nebula-home.jpg" alt="">
+                <ul>
+                    <li class="nome">Nebula Cosmic</li>
+                    <li class="preco">R$ 3999</li>
+                </ul>
+            </div>
+        </div>
+    </article>    
 </body>
 </html>
