@@ -3,7 +3,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     background-color: var(--cor-p1);
-    margin-bottom: 200px;
 }
 
 .depoimentos-imagem img {

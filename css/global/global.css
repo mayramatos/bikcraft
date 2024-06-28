@@ -4,7 +4,7 @@ body {
     color: var(--cor-11);
 }
 
-p, h1, h2, h3, h4, ul {
+p, h1, h2, h3, h4, ul, dd, dt, dl {
     margin: 0px;
     padding: 0px;
   }
