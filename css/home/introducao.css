@@ -1,54 +1,68 @@
-.introducao {
+.introducao-bg {
     background-color: var(--cor-12);
-    
+    color: var(--cor-0);
+    box-shadow: inset 0 -120px var(--cor-0);
 }
 
-.intro-container {
-    max-width: 1200px;
-    margin: 0 auto;
+.introducao {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    align-items: center;
-    gap: 70px;
+    gap: 0px 40px;
+    position: relative;
 }
 
-.titulo-w {
-    color: var(--cor-0);
-    font-family: 'Poppins',Arial, sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.1;
-    font-weight: 600;
+.introducao h1 {
+    margin-bottom: 32px;
 }
 
-.intro-container p {
+.introducao p {
     color: var(--cor-5);
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.intro-container a {
-    font-family: 'Poppins',Arial, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: var(--cor-p5);
-    background-color: var(--cor-p1);
-    padding: 10px 30px;
-    border-radius: 4px;
-    align-self: flex-start;
+    margin-bottom: 20px;
 }
 
 .intro-conteudo {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    align-self: end;
+    padding-bottom: 200px;
 }
 
-.titulo-b {
-    color: var(--cor-12);
-    font-family: 'Poppins',Arial, sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.1;
-    font-weight: 600;
+.introducao img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.detalhe::before {
+    content: "";
+    display: block;
+    background-image: url(../../img/dec/bottom-left.svg);
+    height: 52px;
+    width: 52px;
+    position: absolute;
+    bottom: 140px;
+    left: -200px;
+}
+
+@media (max-width: 800px) {
+    .introducao-bg {
+        background-color: var(--cor-11);
+        padding-top: 40px;
+        box-shadow: inset 0 -60px var(--cor-0);
+    }
+
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .intro-conteudo {
+        padding-bottom: 0px;
+    }
+
+    .introducao h1 {
+        margin-bottom: 16px;
+    }
+
+    .introducao img {
+        height: 300px;
+        width: 100%;
+    }
 }

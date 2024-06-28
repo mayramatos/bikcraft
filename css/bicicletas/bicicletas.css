@@ -1,0 +1,127 @@
+.bicicletas-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 500px 0px var(--cor-0);
+}
+
+.bicicletas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+}
+
+.bicicletas-img {
+    display: grid;
+    grid-area: 1 / 1;
+}
+
+.bicicletas-img span {
+    grid-area: 1 / 1;
+    place-self: start end;
+    margin-top: 20px;
+    padding: 8px 16px 8px 8px;
+    border-radius: 5px 0 0 5px;
+    background-color: var(--cor-12);
+    position: absolute;
+}
+ 
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    position: relative;
+}
+
+.bicicletas-conteudo h3, 
+.bicicletas-conteudo p {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.bicicletas-conteudo p {
+    max-width: 45ch;
+}
+
+.bicicletas-conteudo h3::before {
+    content: "";
+    display: block;
+    background-color: var(--cor-p1);
+    height: 8px;
+    width: 12px;
+    margin-bottom: 10px;
+}
+
+.bicicletas-conteudo h3::after {
+    content: "";
+    background: url(../../img/dec/top-right.svg) no-repeat;
+    display: block;
+    width: 60px;
+    height:60px;
+    position: absolute;
+    right: -5px;
+    top: 5px;
+}
+
+.bicicletas-itens li{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.seta {
+    grid-column: 2;
+    display: flex;
+    align-self: flex-end;
+    justify-self: end;
+    justify-items: center;
+}
+
+.seta::after {
+    content: "";
+    display: inline-block;
+    background: url(../../img/icones/seta.svg) no-repeat;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    transition: 0.2s;
+    position: relative;
+    top: 6px;
+}
+
+
+
+@media (max-width: 800px) {
+    .bicicletas-container {
+        grid-template-columns: 1fr;
+        gap: 10px 40px;
+        margin-bottom: 40px;
+        padding: 40px;
+    }
+    
+    .bicicletas-bg {
+        box-shadow: initial;
+    }
+
+    .bicicletas-img {
+        margin-bottom: 20px;
+    }
+
+    .bicicletas-itens {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+        margin-bottom: 20px;
+    }
+
+    .seta {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+    .bicicletas-conteudo h3::after {
+        display: none;
+    }
+}
+

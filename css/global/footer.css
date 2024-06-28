@@ -1,0 +1,57 @@
+.rodape-bg {
+    background-color: var(--cor-12);
+    padding: 50px 0px;
+} 
+
+.rodape-conteudo {
+    display: flex;
+    gap: 200px;
+}
+
+.rodape h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato span {
+    padding-right: 150px;
+    margin-bottom: 10px;
+}
+
+.contato span:nth-child(odd) {
+    border-bottom: 2px solid var(--cor-11);
+    padding-bottom: 15px;
+}
+
+.sociais ul {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.informacoes li {
+    margin-bottom: 10px;
+}
+
+.informacoes a:hover {
+    color: var(--cor-0);
+}
+
+.direitos {
+    margin-top: 50px;
+}
+
+@media (max-width:800px) {
+    .rodape-img {
+        display: none;
+    }
+
+    .rodape-conteudo {
+        gap: 50px;
+    }
+}

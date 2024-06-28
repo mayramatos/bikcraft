@@ -1,51 +1,30 @@
-:root{
-    --cor-0: #FFFFFF;
-    --cor-1: #f7f7f7;
-    --cor-2: #ededed;
-    --cor-3: #dedede;
-    --cor-4: #cccccc;
-    --cor-5: #b2b2b2;
-    --cor-6: #9c9c9c;
-    --cor-7: #717171;
-    --cor-8: #595959;
-    --cor-9: #404040;
-    --cor-10: #2e2e2e;
-    --cor-11: #111111;
-    --cor-12: #000000;
-    --cor-p1: #ffbb00;
-    --cor-p2: #e4a30b;
-    --cor-p3: #a66f00;
-    --cor-p4: #664400;
-    --cor-p5: #332200;    
-}
-
 body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
+    color: var(--cor-11);
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4, ul {
     margin: 0px;
     padding: 0px;
   }
 
 ul {
     list-style: none;
-    margin: 0px;
     padding: 0px;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block;
+    display: block; 
+}
+
+[src$=".jpg"] {
+    border-radius: 4px;
 }
 
 a {
     text-decoration: none;
-}
-
-.ponto {
-    font-size: 4rem;
-    color: var(--cor-p1);
+    color: inherit;
 }

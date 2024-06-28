@@ -1,0 +1,46 @@
+.depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: var(--cor-p1);
+    margin-bottom: 200px;
+}
+
+.depoimentos-imagem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.depoimentos-conteudo {
+    align-content: end;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.depoimentos-conteudo p {
+    font-family: 'Merryweather', Arial, sans-serif;
+    font-style: italic;
+}
+
+.depoimentos-conteudo span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.depoimentos-conteudo p::before{
+    content: "“";
+    color: var(--cor-p2);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    top: 250px;
+}
+
+.depoimentos-conteudo p::after{
+    content: "“";
+    color: var(--cor-p2);
+    position: absolute;
+}

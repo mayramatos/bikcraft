@@ -3,15 +3,13 @@
 }
 
 .header {
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 20px;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-menu {
@@ -21,12 +19,8 @@
 }
 
 .header-menu a {
-    color: var(--cor-0);
-    font-family: 'Poppins', Arial, sans-serif;
     display: inline-block;
-    font-size: 1.1rem;
     padding: 1rem 0px;
-    font-weight: 500;
     position: relative;
 }
 
